@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout'){
             steps {
-              git url: 'https://github.com/[username]/vat-calculator.git',
+              git url: 'https://github.com/strawberette/vat-calculator.git',
                   branch: 'main'
 
             }
