@@ -16,11 +16,11 @@ pipeline {
 
         //    }
         // }
-        stage('Archive') {
-            steps {
-              sh 'tar -czf build.tar.gz build'
-              archiveArtifacts 'build.tar.gz'
-            }
-        }
+        // stage('Archive') {
+        //     steps {
+        //       sh 'tar -czf build.tar.gz build'
+        //       archiveArtifacts 'build.tar.gz'
+        //     }
+        // }
     }
 }
