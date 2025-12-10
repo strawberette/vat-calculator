@@ -9,13 +9,13 @@ pipeline {
 
             }
         }
-        stage('Build') {
-            steps {
-              npm 'install'
-              npm 'run build'
+        // stage('Build') {
+        //     steps {
+        //       npm 'install'
+        //       npm 'run build'
 
-           }
-        }
+        //    }
+        // }
         stage('Archive') {
             steps {
               sh 'tar -czf build.tar.gz build'
