@@ -8,7 +8,7 @@ pipeline {
         registryCredentials = "dockerhub_login"
         dockerImage = "" // empty var, will be written to later
     }
-
+stages {
     stage('Run Tests') {
         steps {
             sh 'npm install'
