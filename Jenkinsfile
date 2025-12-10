@@ -13,8 +13,8 @@ pipeline {
         steps {
         sh 'npm install'
         sh 'npm test'
+            }   
         }
-    }
         stage('Build Image') {
             steps {
                 script {
@@ -38,3 +38,4 @@ pipeline {
             }
         }
     }
+}
